@@ -46,7 +46,6 @@ nav {
   align-items: center;
   list-style: none;
   gap: 50px;
-  /* border: 1px solid black; */
 }
 .nav-link {
   text-decoration: none;
@@ -55,36 +54,213 @@ nav {
 .nav-link:hover {
   color: #3ac48a;
 }
-.project-one img {
-  width: 400px;
-}
-.project-one a {
-  text-decoration: none;
-  color: black;
-}
-.project-section {
-  display: grid;
-  place-items: center;
-  place-content: start;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  margin-top: 100px;
-}
-.project-one a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .text-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(29, 84, 126);
 }
-/* .text {
-  margin-top: 100px;
+.text-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 900px;
+  font-size: 20px;
+  color: white;
+  font-weight: 900;
+}
+.intro {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-text {
+  color: rgb(29, 84, 126);
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+.slider {
+  background-color: #22fa8a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+.hide {
+  background-color: black;
+  overflow: hidden;
+}
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+.project-one img,
+.project-two img,
+.project-three img,
+.project-four img,
+.project-five img,
+.project-six img {
+  width: 100%;
+}
+.project-one .project-title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  top: 120%;
+}
+.project-two .project-title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  top: 120%;
+}
+.project-three .project-title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  top: 220%;
+}
+.project-four .project-title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  top: 220%;
+}
+.project-five .project-title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  top: 320%;
+}
+.project-six .project-title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  top: 320%;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+}
+.project-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid white;
+}
+.project-one {
+  background-color: red;
+}
+.project-two {
+  background-color: blue;
+}
+.project-three {
+  background-color: yellow;
+}
+.project-four {
+  background-color: orange;
+}
+.project-five {
+  background-color: green;
+}
+/* .project-six {
+  background-color: purple;
 } */
+.project-one .project-title {
+  opacity: 0;
+  transition: 0.6s;
+  color: black;
+  transform: scale(0);
+}
+.project-one:hover .project-title {
+  opacity: 1;
+  transform: scale(1);
+}
+.project-two .project-title {
+  opacity: 0;
+  transition: 0.6s;
+  color: black;
+  transform: scale(0);
+}
+.project-two:hover .project-title {
+  opacity: 1;
+  transform: scale(1);
+}
+.project-three .project-title {
+  opacity: 0;
+  transition: 0.6s;
+  color: black;
+  transform: scale(0);
+}
+.project-three:hover .project-title {
+  opacity: 1;
+  transform: scale(1);
+}
+.project-four .project-title {
+  opacity: 0;
+  transition: 0.6s;
+  color: black;
+  transform: scale(0);
+}
+.project-four:hover .project-title {
+  opacity: 1;
+  transform: scale(1);
+}
+.project-five .project-title {
+  opacity: 0;
+  transition: 0.6s;
+  color: black;
+  transform: scale(0);
+}
+.project-five:hover .project-title {
+  opacity: 1;
+  transform: scale(1);
+}
+.project-six .project-title {
+  opacity: 0;
+  transition: 0.6s;
+  color: black;
+  transform: scale(0);
+}
+.project-six:hover .project-title {
+  opacity: 1;
+  transform: scale(1);
+}
+.image-one {
+  width: 100%;
+  border: 1px solid white;
+  height: 100%;
+}
+.image-one:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   body {

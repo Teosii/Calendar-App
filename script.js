@@ -19,3 +19,19 @@ const navSlider = () => {
   });
 };
 navSlider();
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (!sessionStorage.getItem("animationPlayed")) {
+    var tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+    tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+    tl.to(".intro", { y: "-100%", duration: 1.5, delay: 0.5 });
+
+    sessionStorage.setItem("animationPlayed", "true");
+  } else {
+    document
+      .querySelectorAll(".text")
+      .forEach((text) => (text.style.transform = "translateY(0%)"));
+    document.querySelector(".intro").style.transform = "translateY(-100%)";
+  }
+});
